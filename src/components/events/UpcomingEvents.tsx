@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import type { EventConfig } from '../../config/Config'
+import type { EventConfig } from '../../config/ConfigTypes'
 import ClassEvent from './ClassEvent';
 import './UpcomingEvents.css';
 
@@ -17,8 +17,8 @@ export default class UpcomingEvents extends Component<UpcomingEventsProps> {
       <div className='upcomingEvents'>
         <h2>Upcoming Classes</h2>
         {
-          this.props.events.map((e) => 
-            <ClassEvent title={e.title} date={e.date} location={e.location} description={e.description} />)
+          this.props.events.map((e, i) => 
+            <ClassEvent key={`event-${i}`} title={e.title} date={e.date} location={e.location} description={e.description} />)
         }
       </div>
     )

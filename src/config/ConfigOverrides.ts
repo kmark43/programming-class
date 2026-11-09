@@ -1,3 +1,3 @@
-export const ConfigOverrides = {
-  // hidePageProgress: false,
+export const DevConfigOverrides = {
+  hidePageProgress: false,
 }
