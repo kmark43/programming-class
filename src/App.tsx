@@ -1,11 +1,23 @@
 import './App.css'
+import UpcomingEvents from './components/events/UpcomingEvents';
+import NavBar from './components/nav/NavBar';
+import { config } from './config/Config'
+import WaitingApp from './WaitingApp'
 
 function App() {
+  if (config.hidePageProgress) {
+    return (<WaitingApp />);
+  }
   return (
-    <>
-      <h1>Programming 101</h1>
-      <h2>Coming soon...</h2>
-    </>
+    <div className='app'>
+      <nav>
+        <NavBar />
+      </nav>
+      <main>
+        <h1>Koko's Programming Classes</h1>
+        <UpcomingEvents events={config.events} />
+      </main>
+    </div>
   )
 }
 
