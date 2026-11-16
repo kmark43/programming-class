@@ -5,7 +5,14 @@ export interface EventConfig {
   description?: string,
 }
 
+export interface Lesson {
+  path: string,
+  course: string,
+  name: string,
+}
+
 export interface Config {
   hidePageProgress: boolean,
   events: EventConfig[],
+  lessons: Lesson[],
 }

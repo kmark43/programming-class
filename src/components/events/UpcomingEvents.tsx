@@ -8,10 +8,6 @@ export interface UpcomingEventsProps {
 }
 
 export default class UpcomingEvents extends Component<UpcomingEventsProps> {
-  constructor(props: UpcomingEventsProps) {
-    super(props);
-  }
-
   render() {
     return (
       <div className='upcomingEvents'>

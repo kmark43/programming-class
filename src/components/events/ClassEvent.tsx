@@ -2,10 +2,6 @@ import { Component } from 'react'
 import type { EventConfig } from '../../config/ConfigTypes';
 
 export default class ClassEvent extends Component<EventConfig> {
-  constructor(props: EventConfig) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="classEvent">

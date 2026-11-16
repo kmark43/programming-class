@@ -1,4 +1,4 @@
-import type { Config, EventConfig } from "./ConfigTypes";
+import type { Config, EventConfig, Lesson } from "./ConfigTypes";
 
 const events: EventConfig[] = [
   {
@@ -9,7 +9,18 @@ const events: EventConfig[] = [
   }
 ];
 
+const lessons101: Lesson[] = [
+  { path: '101/intro.md', course: '101', name: 'Intro' },
+];
+
+const lessons102: Lesson[] = [
+];
+
+const lessons103: Lesson[] = [
+];
+
 export const defaultConfig: Config = {
   hidePageProgress: true,
+  lessons: { ...lessons101, ...lessons102, ...lessons103 },
   events,
 }

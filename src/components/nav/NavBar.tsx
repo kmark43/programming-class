@@ -6,7 +6,7 @@ export default class NavBar extends Component {
     return (
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/">spaceykoko.dev</a></li>
           <li><a href="/101">Python 101</a></li>
           <li><a href="/102">Python 102</a></li>
           <li><a href="/103">Python 103</a></li>

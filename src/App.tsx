@@ -2,6 +2,7 @@ import './App.css'
 import UpcomingEvents from './components/events/UpcomingEvents';
 import NavBar from './components/nav/NavBar';
 import { config } from './config/Config'
+import IntroHome from './courses/101/IntroHome';
 import WaitingApp from './WaitingApp'
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
         <NavBar />
       </nav>
       <main>
-        <h1>Koko's Programming Classes</h1>
+        <h1>Spacey Koko Programming Classes</h1>
         <UpcomingEvents events={config.events} />
+        {/* <IntroHome lessons={config.lessons} /> */}
       </main>
     </div>
   )
