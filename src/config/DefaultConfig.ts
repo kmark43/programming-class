@@ -20,7 +20,7 @@ const lessons103: Lesson[] = [
 ];
 
 export const defaultConfig: Config = {
-  hidePageProgress: true,
+  hidePageProgress: false,
   lessons: { ...lessons101, ...lessons102, ...lessons103 },
   events,
 }
